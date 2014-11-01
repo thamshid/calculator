@@ -16,6 +16,8 @@ public class Calculator {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+        home h=new home();
+        h.setVisible(true);
         // TODO code application logic here
     }
     
