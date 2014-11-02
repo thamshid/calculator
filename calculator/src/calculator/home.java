@@ -54,8 +54,10 @@ public class home extends javax.swing.JFrame {
         jButton17 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setBackground(new java.awt.Color(204, 0, 0));
 
         sreen.setEditable(false);
+        sreen.setBackground(new java.awt.Color(0, 204, 204));
 
         clear.setText("CLEAR");
         clear.addActionListener(new java.awt.event.ActionListener() {
@@ -211,23 +213,22 @@ public class home extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(jButton17))
                     .addComponent(sreen)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                        .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
-                            .addComponent(jButton5)
-                            .addGap(18, 18, 18)
-                            .addComponent(jButton6)
-                            .addGap(18, 18, 18)
-                            .addComponent(jButton7)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                            .addComponent(jButton15, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                        .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
-                            .addComponent(jButton8)
-                            .addGap(18, 18, 18)
-                            .addComponent(jButton9)
-                            .addGap(18, 18, 18)
-                            .addComponent(jButton10)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                            .addComponent(jButton16))))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(jButton5)
+                        .addGap(18, 18, 18)
+                        .addComponent(jButton6)
+                        .addGap(18, 18, 18)
+                        .addComponent(jButton7)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(jButton15, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(jButton8)
+                        .addGap(18, 18, 18)
+                        .addComponent(jButton9)
+                        .addGap(18, 18, 18)
+                        .addComponent(jButton10)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(jButton16)))
                 .addContainerGap(20, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -391,7 +392,7 @@ String s=sreen.getText();
         if(op==0){
             al=sp.length();
             a=Float.parseFloat(sp);
-            op=1;
+           // op=1;
             f=0;
             b=0;
         //  ch='+';
