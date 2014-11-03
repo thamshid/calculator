@@ -281,12 +281,17 @@ op=0;// TODO add your handling code here:
     }//GEN-LAST:event_clearActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-      String s=sreen.getText();  
+      String s=sreen.getText();
+      if(s.equalsIgnoreCase("NaN")||s.equalsIgnoreCase("infinity"))
+          sreen.setText("");
+      else
+      {
       int l=s.length();
       if(l!=0)
       sreen.setText(s.substring(0,l-1));
       if(l==1)
           op=0;
+      }
 // TODO add your handling code here:
     }//GEN-LAST:event_jButton1ActionPerformed
 
