@@ -474,6 +474,9 @@ String s=sreen.getText();
         sp=sreen.getText();
         if(op==0){
             al=sp.length();
+            if(al==0)
+                a=0;
+            else
             a=Float.parseFloat(sp);
             op=1;f=0;
             ch='-';
