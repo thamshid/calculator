@@ -62,6 +62,7 @@ public class home extends javax.swing.JFrame {
 
         sreen.setEditable(false);
         sreen.setBackground(new java.awt.Color(0, 204, 204));
+        sreen.setFont(new java.awt.Font("Snap ITC", 0, 14)); // NOI18N
 
         clear.setText("CLEAR");
         clear.addActionListener(new java.awt.event.ActionListener() {
